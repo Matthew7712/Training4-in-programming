@@ -3,17 +3,50 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="/img/Vector.svg" type="image/x-icon">
-   <title>Growfy</title>
-   <link rel="stylesheet" href="/css/main.css">
+   <link rel="icon" href="/img/Header/Logo.svg" type="image/x-icon">
+   <link rel="stylesheet" href="css/main.css">
+   <title>T.Past</title>
 </head>
 <body>
-<!-- Отзывчивая верствка - это как бы резиновая,значения обычно в процентах -->
    <div class="wrapper">
-      <header class="header"></header>
-      <main class="main-page"></main>
+      <header class="header">
+         <div class="header__container">
+            <a href="index.html" class="header__logo"><img src="/img/Header/Logo.svg" alt="Company Logo"></a>
+            <nav class="header__menu">
+               <div class="menu__body">
+                  <ul class="menu__list">
+                     <li class="menu__link">
+                        <a href="#">Stores</a>
+                     </li>
+                     <li class="menu__link">
+                        <a href="#">Help&Support</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <a href="#" class="header__button">Download</a>
+            <button class="icon-menu" type="button">
+               <span></span>
+            </button>
+         </div>
+      </header>
+      <main class="main-page">
+         <section class="page__order">
+            <div class="order__container">
+               <div class="order__content">
+                  <h1 class="order__title">
+                     <span>Order ahead</span>
+                     and earn rewards for
+                     every purchase
+                  </h1>
+                  <a class="order__button">Discover now <img src="/img/Main/Order-ahead/Arrow.svg" alt="Arrow"></a>
+               </div>
+               <div class="order__image"><img src="/img/Main/Order-ahead/Main.png" alt="Offer"></div>
+            </div>
+         </section>
+      </main>
       <footer class="footer"></footer>
    </div>
-   <script src="/js/app.js"></script>
 </body>
+<script src="js/app.js"></script>
 </html>
