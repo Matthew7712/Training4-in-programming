@@ -1,7 +1,15 @@
 @import url("style.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
+
+.card__text, .work__text, caption, .content-item__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #576D81;
+  font-weight: 400;
+  line-height: 1.5rem; }
 
 .order__title {
   font-size: 3.4375rem;
@@ -10,6 +18,20 @@ body {
   line-height: 1.5;
   /* 138% */
   letter-spacing: 0.0694rem; }
+
+.work__title {
+  font-size: 40px;
+  color: #0F2336;
+  font-weight: 900;
+  line-height: 3.45rem; }
+
+.card__title, .content-item__title {
+  font-size: 1.5625rem;
+  color: #0F2336;
+  font-weight: 700;
+  line-height: 25px;
+  /* 100% */
+  letter-spacing: 0.2px; }
 
 [class*="__container"] {
   max-width: 75rem;
@@ -163,13 +185,12 @@ li.menu__link a {
 
 .page__order {
   background-color: #F5F6F7;
-  width: 100vw;
-  height: 100vh; }
+  width: 100vw; }
 
 .order__container {
   display: flex;
   align-items: center;
-  padding: 12rem 1rem 6rem 1rem;
+  padding: 6rem 1rem;
   gap: 2rem; }
 .order__content {
   width: 50%; }
@@ -196,6 +217,9 @@ a.order__button img {
   margin-left: 2rem; }
 
 @media (max-width: 62.4363rem) {
+  .page__container {
+    padding: 4rem 1rem; }
+
   .order__title {
     font-size: 2.5rem;
     font-weight: 600; }
@@ -228,3 +252,148 @@ a.order__button img {
     width: 2rem;
     overflow: hidden;
     flex: 0 0 2rem; } }
+.offers__container {
+  padding: 6.25rem 1rem 2.5rem 1rem;
+  display: flex;
+  align-items: center; }
+.offers__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3rem; }
+
+.card__logo img {
+  margin-bottom: 1.875rem; }
+.card__title {
+  margin-bottom: 0.75rem; }
+
+@media (max-width: 62.4363rem) {
+  .offers__columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; }
+
+  .card__title {
+    font-weight: 600;
+    font-size: 1.375rem; } }
+@media (max-width: 47.9988rem) {
+  .offers__container {
+    padding: 4.25rem 1rem 2rem 1rem; } }
+@media (max-width: 41.2488rem) {
+  .offers__columns {
+    grid-template-columns: auto; } }
+.page__work {
+  background-color: #F5F6F7; }
+
+.work__container {
+  padding: 3.125rem 1rem 5.625rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+.work__image {
+  flex: 0 1 50%; }
+.work__content {
+  flex: 0 1 50%; }
+.work__title {
+  margin-bottom: 1.375rem; }
+.work__text {
+  margin-bottom: 1rem; }
+
+.work__image img {
+  width: 100%; }
+
+caption {
+  margin-bottom: 1.375rem; }
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; }
+
+a.work-button {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #E3E6E8;
+  border-radius: 50%;
+  transition: all 0.2s linear 0.2s; }
+
+a.work-button:active {
+  width: 3rem;
+  border-radius: 0.5rem;
+  background-color: #0CC; }
+
+@media (max-width: 62.4363rem) {
+  .work__container {
+    padding: 2.125rem 1rem 4.375rem 1rem; }
+
+  .work__title {
+    font-weight: 600; } }
+@media (max-width: 47.9988rem) {
+  .work__container {
+    flex-direction: column-reverse; }
+
+  .work__content {
+    align-self: stretch;
+    width: 100%; }
+
+  .work__image {
+    align-self: stretch; }
+
+  .work__image img {
+    width: 100vw;
+    height: 100%; } }
+@media (max-width: 24.375rem) {
+  .work__title {
+    font-weight: 500;
+    font-size: 2rem; } }
+.page__statistick {
+  background-color: #F5F6F7; }
+
+.statistick__container {
+  padding: 1rem; }
+
+.work__information {
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+
+.information__columns {
+  flex: 0 1 50%; }
+.information__image {
+  flex: 0 1 50%; }
+  .information__image img {
+    width: 100%; }
+
+.column-information__item {
+  padding: 1.5625rem 1.9375rem 2.6875rem 1.5625rem;
+  display: flex;
+  gap: 0.4rem;
+  background: #FFF;
+  border-radius: 0.5rem; }
+
+.column-information__item:not(:last-child) {
+  margin-bottom: 1.875rem; }
+
+.item__logo img {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #F5F6F7;
+  border-radius: 0.5rem; }
+
+.content-item__title {
+  margin-bottom: 1.5625rem; }
+
+@media (max-width: 47.9988rem) {
+  .work__information {
+    flex-direction: column; }
+
+  .work__content {
+    align-self: stretch;
+    width: 100%; }
+
+  .work__image {
+    align-self: stretch; }
+
+  .work__image img {
+    width: 100vw;
+    height: 100%; } }
